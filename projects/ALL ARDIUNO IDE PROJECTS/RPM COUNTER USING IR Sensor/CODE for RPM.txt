@@ -1,0 +1,46 @@
+#include <LiquidCrystal_PCF8574.h>
+
+LiquidCrystal_PCF8574 lcd(0x27);  // use lcd address 0x27 in the place of 0x3F ,if LCD not workd
+
+float value=0;
+float rev=0;
+int rpm;
+int oldtime=0;
+int time;
+int sec;
+
+void isr() //interrupt service routine
+{
+rev++;
+}
+
+void setup()
+{
+lcd.begin(16,2);                //initialize LCD
+lcd.setBacklight(1);
+attachInterrupt(0,isr,RISING);  //attaching the interrupt
+}
+
+void loop()
+{
+delay(1000);
+detachInterrupt(0);           //detaches the interrupt
+time=millis()-oldtime;        //finds the time 
+rpm=(rev/time)*60000;         //calculates rpm
+oldtime=millis();             //saves the current time
+rev=0;
+lcd.clear();
+lcd.setCursor(0,0);
+lcd.print("   RPM COUNTER  ");
+lcd.setCursor(0,1);
+lcd.print(     rpm);
+lcd.print(" RPM");
+lcd.print(" ");
+sec=rpm/60;
+//lcd.print(   sec);
+//lcd.print("/s");
+attachInterrupt(0,isr,RISING);
+
+}
+
+    

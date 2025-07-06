@@ -1,0 +1,57 @@
+#include <LiquidCrystal_PCF8574.h>
+#include <Wire.h>
+#include <DHT.h>
+
+// Define DHT11 sensor
+#define DHTPIN 2       // Pin where the DHT11 is connected
+#define DHTTYPE DHT11  // DHT11 sensor
+
+DHT dht(DHTPIN, DHTTYPE);
+
+// Initialize the LCD with I2C address 0x27 and size 16x2
+LiquidCrystal_PCF8574 lcd(0x27);
+
+void setup() {
+  // Initialize the LCD
+  lcd.begin(16,2);
+  lcd.setBacklight(1);
+
+  // Print a message to the LCD
+  lcd.setCursor(0, 0);
+  lcd.print("Temp & Humidity");
+
+  // Initialize the DHT11 sensor
+  dht.begin();
+
+  // Small delay
+  delay(2000);
+}
+
+void loop() {
+  // Read temperature and humidity values from DHT11
+  float humidity = dht.readHumidity();
+  float temperature = dht.readTemperature();
+
+  // Check if any readings failed
+  if (isnan(humidity) || isnan(temperature)) {
+    lcd.setCursor(0, 1);
+    lcd.print("Error reading DHT");
+    return;
+  }
+
+  // Display temperature on the first row
+  lcd.setCursor(0, 0);
+  lcd.print("Temp: ");
+  lcd.print(temperature);
+  lcd.print(" C");
+
+  // Display humidity on the second row
+  lcd.setCursor(0, 1);
+  lcd.print("Humidity: ");
+  lcd.print(humidity);
+  lcd.print(" %");
+
+  // Wait 1 seconds before updating the values again
+  delay(1000);
+  lcd.clear();
+}

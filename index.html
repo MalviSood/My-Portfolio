@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container"></div>
+        <nav>
+            <img src="images/logo.jpg" alt="Malvi Sood">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#techCert">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Engineering Student</p>
+            <h1>Hi, I'm <span>Malvi Sood </span> From<br> Himachal Pradesh</h1>
+        </div>
+    </div>
+    <!--  about         -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span> </h1>
+                    <p>
+                        Hi, I am Malvi Sood, a BTech student in Computer Science and Engineering with a specialization
+                        in Artificial Intelligence and Machine Learning. I am from the scenic state of Himachal Pradesh,
+                        and I am someone who finds joy in curiosity and constant learning.
+
+                        I am passionate about web development and software projects, and while I am still exploring and
+                        learning, I am eager to take on new challenges that help me grow as an engineer. I scored a 9.4
+                        CGPA last year, and I believe in being punctual, disciplined, and always open to feedback.
+
+                        Beyond tech, I am a creative soul—whether it is pen art, mandala designs, or traditional
+                        Madhubani painting. I also enjoy writing blogs and stories, and I am an avid fan of movies and
+                        TV series. I have hands-on skills in digital marketing as well, which gives me a unique blend of
+                        creativity and strategy.
+
+                        I am always excited to collaborate on meaningful projects and look forward to contributing to
+                        innovative ideas in tech.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('languages')">Coding Languages</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Web app development </li>
+                            <li><span>Software development</span><br>Creating Working Softwares</li>
+                            <li><span>Content writing</span><br>Blogs, Articles, Captions and other digital content
+                            </li>
+                            <li><span>Digital Marketing</span><br>Social Media Marketing, Linkedin Marketing, B2C </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>Frontend development</span><br>HTML, CSS and Javascript</li>
+                            <li><span>Backend development</span><br>node.js, python, C#</li>
+                            <li><span>Software development</span><br>C, C++, Core Java</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2012-2024</span><br>St Luke's Senior Secondary School Solan</li>
+                            <li><span>2024-Present</span><br>SRM Institute of Science and Technology, Kattankulathur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----proj--------- -->
+         <div id="projs">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="proj-list">
+                <div class="proj">
+                    <img src="images/netfliximg.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone Website</h3>
+                        <ul>
+                            <li><span>Fully responsive</span> clone of Netflix with homepage UI and basic video integration. Tech Stack used was HTML, CSS and JavaScript (Vanilla) <br>
+                                <a href="https://drive.google.com/file/d/1SqOupL3fm-1Fun2-SZRsM8iPAu3GyI36/view?usp=drive_link"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"> </i></a>
+                            </li>
+                        </ul>
+                        <p> Github <a href="https://github.com/MalviSood"><i class="fa-brands fa-github"></i></a> </p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="images/amazonimg.jpeg" alt="">
+                   <div class="layer">
+                        <h3>Netflix Clone Website</h3>
+                        <ul>
+                            <li><span>Developed</span> a visually appealing and responsive clone of Amazon using HTML, CSS, and JavaScript. Includes key pages like the homepage, product page, cart page, sign-in, and sign-up pages.<br>
+                                <a href="https://drive.google.com/file/d/1cHqZXWJJJOvF1G5qUSIYmhjuuCR1z6Hj/view?usp=drive_link"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"> </i></a>
+                            </li>
+                        </ul>
+                        <p> Github <a href="https://github.com/MalviSood"><i class="fa-brands fa-github"></i></a> </p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="images/arduino.jpg" alt="">
+                    <div class="layer">
+                        <h3>Arduino Projects</h3>
+                        <ul>
+                            <li><span>Temparature and Humidity Logger</span> using DHT11<br>
+                                <a href="projects/ALL ARDIUNO IDE PROJECTS/Humidity And Temprature using DHT11/"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"> </i> </a>
+                            </li>
+                            <li><span>Servo Distance Indicator</span> using Servomotor
+                        <br>
+                                <a href="projects/ALL ARDIUNO IDE PROJECTS/Distance Indicator using ultrasonic Sensor and Servomotor/"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"> </i></a>
+                            </li>
+                            <li><span>Smart Alarm System</span> using Ultrasonic Sensor<br>
+                                <a href="projects/ALL ARDIUNO IDE PROJECTS/Smart Alarm System Using Motion Detection/"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </li>
+                             <li><span>RPM Counter</span> using IR Sensor<br>
+                                <a href="projects/ALL ARDIUNO IDE PROJECTS/Smart Alarm System Using Motion Detection/"
+                                    target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----tech certifications----- -->
+    <div id="techCert">
+        <div class="container">
+            <h1 class="sub-title">Technical Achievements</h1>
+            <div class="tech-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming and Debugging</h2>
+                    <ul>
+                        <li>
+                            <b>Java Programming For Beginners</b>
+                            <span>Offered by IBM through Coursera</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/UWF54OMN11JU"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Troubleshooting and Debugging Techniques</b>
+                            <span>Offered by Google through Coursera</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/2QIQMTEL7ABL"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Crash Course On Python</b>
+                            <span>Offered by Google through Coursera</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/ED69EFGAG3JV"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web and UI Development</h2>
+                    <ul>
+                        <li>
+                            <b>Introduction to Git and Github</b>
+                            <span>Offered By Google through Coursera</span>
+                            <a href="https://certificate.codingninjas.com/event_certificate/ce69a2315e496a3d/participation?source=LinkedIn"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Website Development</b>
+                            <span>Offered by Skill Academia</span>
+                            <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/4182"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Website Designing</b>
+                            <span>Offered by Skill Academia</span>
+                            <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/4353"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>UI Designing</b>
+                            <span>Offered by Skill Academia</span>
+                            <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/3984"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Tech Events</h2>
+                    <ul>
+                        <li>
+                            <b>Generative AI Workshop</b>
+                            <span>Organised at IIT Madras</span>
+                            <a href="https://drive.google.com/file/d/1YOQCZFxbNHjLNCiv8vCd70NO4-18huIu/view?usp=drivesdk"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Hackathon on Generative AI</b>
+                            <span>Organised at IIT Madras</span>
+                            <a href="https://drive.google.com/file/d/1YF7bHkiy1AVGNVMOPd6_G8GBaV2k5lct/view?usp=drivesdk"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>GameGen Workshop</b>
+                            <span>Organised by Coding Ninjas Club</span>
+                            <a href="https://certificate.codingninjas.com/event_certificate/ce69a2315e496a3d/participation?source=LinkedIn"
+                                target="_blank">Verify Certificate</a>
+                        </li>
+                        <li>
+                            <b>Pythoneers Workshop</b>
+                            <span>Organised by ACM SigCHI Student Chapter, SRM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- -----non-technical-certifications---- -->
+<div id="nontech">
+    <div class="container">
+        <h1 class="sub-title">Non-Technical Achievements</h1>
+        <div class="ntech-list">
+            <div class="ntech-card">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Communication & Creativity</h2>
+                <p><strong>Content Writing</strong> by Skill Academia</p>
+                <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/3325" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p><strong>Graphic Designing</strong> by Skill Academia</p>
+                <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/3777" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="ntech-card">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Marketing & Strategy</h2>
+                <p><strong>Content Marketing</strong> by Hubspot</p>
+                <a href="https://app.hubspot.com/academy/achievements/pt677z27/en/1/malvi-sood/content-marketing" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p><strong>Social Media Marketing</strong> by Hubspot & Skill Academia</p>
+                <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/3486" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p><strong>Digital Marketing</strong> by Skill Academia</p>
+                <a href="https://certificate.skillacademia.com/verify?id=SA/S14OCT/3366" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="ntech-card">
+                <i class="fa-solid fa-award"></i>
+                <h2>Internships & Achievements</h2>
+                <p><strong>Content Writing Internship</strong> at InAmigos Foundation</p>
+                <a href="https://drive.google.com/drive/folders/1UTJaKCJy1wJIvtzQxr0-TW3q-U3apdNu" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p><strong>Associate - Editorial Domain</strong> 10X Coding Ninjas</p>
+                <a href="https://drive.google.com/file/d/1YPZvDd1JjPl9kZTct_QTbSyicstwTc6W/view?usp=drivesdk" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p><strong>Reuse & Remodel Product</strong> by SRM Lab</p>
+                <a href="https://drive.google.com/file/d/1Z093VjN2WaQkDaJ43Z0ABEYSaNKIL8ga/view?usp=drivesdk" target="_blank">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- -----contact me---- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>malvisood@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>7559725240</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/malvi_sood_14?igsh=dmM4djl5MnBhdDh3" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/malvi-sood-591706323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MalviSood" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/malvi.sood.3" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;<span> Malvi</span> Sood. Made with <i class="fa-solid fa-heart"></i> and a lot of effort.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname,) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyZWy-dVv1YDkZBsLkLouhe-p8W82cWTvRL9c7DVb2Md8tH82qu3_Pyi9Zfu-JyOFLltQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
